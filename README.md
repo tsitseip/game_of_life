@@ -19,13 +19,14 @@ Note, that there are default values in main, so in fact you can customize it. Fo
 
 So, when you start main you can input following arguments:
 
-	- frame(X): the initiall state. Note that if you want to make rectangular you need to input all cells of this rectangular, even empty rows and columns.
 
-	- a(X), b(X), c(X): theshholds for the rules of next frame. If number of neighbors is less then a or more then b and cell is alive it will become dead. If cell is alive and in range from a to b then it will remaine alive. If cell is dead and number of neighbors that are alive is c then cell becomes dead and otherwise it will be alive.
+	-- a(X), b(X), c(X): theshholds for the rules of next frame. If number of neighbors is less then a or more then b and cell is alive it will become dead. If cell is alive and in range from a to b then it will remaine alive. If cell is dead and number of neighbors that are alive is c then cell becomes dead and otherwise it will be alive.
 
-	- alive(X): the character that will be outputed on the place of cell which is alive.
+	-- alive(X): the character that will be outputed on the place of cell which is alive.
 
-	- dead(X): the character that will be outputed on the place of cell which is dead.
+	-- dead(X): the character that will be outputed on the place of cell which is dead.
 
-	- k(X): number of frames it will simulate. If X == -1 then it will output frames infinitely.
+	-- k(X): number of frames it will simulate. If X == -1 then it will output frames infinitely.
 
+
+Note that X is variable since it is writen with big letter while functions (predicates) are written from small character.
